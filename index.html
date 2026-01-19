@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Visualizations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .viz-container {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .viz-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Performance Data Visualizations</h1>
+    <p>This website presents 3 visualizations based on the Students Performance dataset from Kaggle.</p>
+
+    <div class="viz-container">
+        <h2>Visualization 1: Data Complexity Overview</h2>
+        <img src="viz1_complexity.png" alt="Pairplot of test scores colored by gender">
+        <h3>Methodology:</h3>
+        <p>This pairplot shows the relationships between math, reading, and writing scores, with points colored by gender. Diagonal plots show the distribution of each score, while off-diagonal plots show scatter plots of score pairs.</p>
+        <h3>Results:</h3>
+        <p>The visualization reveals that scores are generally positively correlated across subjects. Females tend to have higher reading and writing scores, while males have slightly higher math scores on average. The distributions show most students score between 60-80 across subjects.</p>
+    </div>
+
+    <div class="viz-container">
+        <h2>Visualization 2: Trend by Parental Education</h2>
+        <img src="viz2_trend.png" alt="Average scores by parental education level">
+        <h3>Methodology:</h3>
+        <p>Grouped the data by parental level of education and calculated the mean scores for math, reading, and writing. Ordered the education levels from lowest to highest and created a bar chart.</p>
+        <h3>Results:</h3>
+        <p>There's a clear positive trend: students whose parents have higher education levels tend to perform better across all subjects. The difference is most pronounced between "some high school" and "master's degree" parents, with math scores showing the largest improvement.</p>
+    </div>
+
+    <div class="viz-container">
+        <h2>Visualization 3: Predicting Math Performance</h2>
+        <img src="viz3_model.png" alt="Feature importance for math score prediction">
+        <h3>Methodology:</h3>
+        <p>Built a linear regression model to predict math scores using all other variables (gender, race/ethnicity, parental education, lunch type, test preparation, and other scores). Split data 80/20 for training/testing. The bar chart shows the coefficients (feature importance) from the model.</p>
+        <h3>Results:</h3>
+        <p>The model achieved an MSE of 29.1. Reading and writing scores are the strongest predictors of math performance. Test preparation completion and standard lunch also positively correlate with higher math scores. Gender shows males slightly better in math, but the effect is small.</p>
+    </div>
+
+    <footer style="text-align: center; margin-top: 40px; color: #777;">
+        <p>Data source: Students Performance dataset from Kaggle</p>
+    </footer>
+</body>
+</html>
