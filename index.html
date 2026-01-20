@@ -39,30 +39,30 @@
     <p>This website presents 3 visualizations based on the Students Performance dataset from Kaggle.</p>
 
     <div class="viz-container">
-        <h2>Visualization 1: Data Complexity Overview</h2>
-        <img src="viz1_complexity.png" alt="Pairplot of test scores colored by gender">
+        <h2>Visualization 1: Student Performance Analysis</h2>
+        <img src="viz1_complexity.png" alt="Score distributions and correlations">
         <h3>Methodology:</h3>
-        <p>This pairplot shows the relationships between math, reading, and writing scores, with points colored by gender. Diagonal plots show the distribution of each score, while off-diagonal plots show scatter plots of score pairs.</p>
+        <p>This comprehensive analysis shows the distribution of scores across all three subjects through histograms, providing insight into the overall performance levels. The correlation heatmap reveals how performance in one subject relates to performance in others.</p>
         <h3>Results:</h3>
-        <p>The visualization reveals that scores are generally positively correlated across subjects. Females tend to have higher reading and writing scores, while males have slightly higher math scores on average. The distributions show most students score between 60-80 across subjects.</p>
+        <p>The majority of students score between 60-80 across subjects, with reading and writing scores showing similar distributions. The strong positive correlations (0.81-0.95) indicate that students who excel in one subject tend to perform well in others, suggesting consistent academic ability patterns.</p>
     </div>
 
     <div class="viz-container">
-        <h2>Visualization 2: Trend by Parental Education</h2>
+        <h2>Visualization 2: The Role of Parental Education in Academic Success</h2>
         <img src="viz2_trend.png" alt="Average scores by parental education level">
         <h3>Methodology:</h3>
-        <p>Grouped the data by parental level of education and calculated the mean scores for math, reading, and writing. Ordered the education levels from lowest to highest and created a bar chart.</p>
+        <p>Students were grouped by their parents' highest level of education, and average scores were calculated for each subject. The results are displayed in a grouped bar chart to facilitate comparison across education levels and subjects.</p>
         <h3>Results:</h3>
-        <p>There's a clear positive trend: students whose parents have higher education levels tend to perform better across all subjects. The difference is most pronounced between "some high school" and "master's degree" parents, with math scores showing the largest improvement.</p>
+        <p>There is a clear positive relationship between parental education level and student performance. Students whose parents have advanced degrees (bachelor's or master's) achieve significantly higher scores across all subjects compared to those whose parents have only high school education, highlighting the importance of educational background in academic outcomes.</p>
     </div>
 
     <div class="viz-container">
-        <h2>Visualization 3: Predicting Math Performance</h2>
-        <img src="viz3_model.png" alt="Feature importance for math score prediction">
+        <h2>Visualization 3: External Factors Affecting Mathematics Performance</h2>
+        <img src="viz3_model.png" alt="Impact of test preparation and lunch programs">
         <h3>Methodology:</h3>
-        <p>Built a linear regression model to predict math scores using all other variables (gender, race/ethnicity, parental education, lunch type, test preparation, and other scores). Split data 80/20 for training/testing. The bar chart shows the coefficients (feature importance) from the model.</p>
+        <p>This analysis examines how two key external factors - participation in test preparation courses and lunch program status - influence mathematics performance. Average math scores were calculated for each category to identify practical interventions that can improve student outcomes.</p>
         <h3>Results:</h3>
-        <p>The model achieved an MSE of 29.1. Reading and writing scores are the strongest predictors of math performance. Test preparation completion and standard lunch also positively correlate with higher math scores. Gender shows males slightly better in math, but the effect is small.</p>
+        <p>Both factors show significant impact: students who completed test preparation courses scored 7.6 points higher on average (66.0 vs 73.6), while those with standard lunch programs scored 7.8 points higher than those with free/reduced lunch (58.9 vs 66.7). These findings suggest that both academic preparation and nutritional support are important for mathematics achievement.</p>
     </div>
 
     <footer style="text-align: center; margin-top: 40px; color: #777;">
