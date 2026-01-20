@@ -4,9 +4,9 @@ This project contains 3 visualizations based on the Students Performance dataset
 
 ## Visualizations
 
-1. **Data Complexity Overview**: A pairplot showing relationships between test scores colored by gender.
-2. **Trend by Parental Education**: Bar chart of average scores across different parental education levels.
-3. **Math Score Prediction**: Feature importance from a linear regression model predicting math scores.
+1. **Student Performance Analysis**: Comprehensive view of score distributions and correlations across mathematics, reading, and writing subjects.
+2. **The Role of Parental Education in Academic Success**: Analysis showing how parental education level impacts student performance across all subjects.
+3. **External Factors Affecting Mathematics Performance**: Examination of how test preparation courses and lunch programs influence mathematics achievement.
 
 ## Hosting on GitHub Pages
 
